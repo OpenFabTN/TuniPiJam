@@ -272,12 +272,12 @@ ul li {
   font-weight: 400;
   border-bottom: 1px solid transparent;
 }
-.navbar-custom .navbar-nav > li > a:focus, .navbar-custom .navbar-nav > li > a:hover {
-  background-color: transparent;
-  border-color: rgba(255, 255, 255, 0.5);
-}
+.navbar-custom .navbar-nav > li > a:focus, 
+.navbar-custom .navbar-nav > li > a:hover,
 .navbar-custom .navbar-nav > .active > a {
-  border-color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-color: rgba(200, 0, 50, 0.5);
+  color: #c80032;
 }
 
 .navbar-toggle {
