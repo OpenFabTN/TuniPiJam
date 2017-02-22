@@ -147,6 +147,10 @@ ul li {
   text-align: center;
 }
 
+.img-responsive{
+  margin: auto;
+}
+
 /* 
  * 3.0 Helper Class
  */
@@ -231,7 +235,10 @@ ul li {
 }
 
 .bg-image-2 {
-  background: url(../images/backgrounds/bg-2.jpg) no-repeat center bottom/cover;
+  background: url(../images/backgrounds/bg-2.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  background-size: cover;
 }
 .bg-image-2::before {
   background-color: rgba(0, 0, 0, 0.7);
@@ -283,7 +290,6 @@ ul li {
 .navbar-toggle {
   border: 0;
   border-radius: 0;
-  margin-top: 2px;
 }
 .navbar-toggle .icon-bar {
   background-color: #fff;
@@ -298,7 +304,7 @@ ul li {
 
 .site-branding {
   float: left;
-  margin-top: 0;
+  margin-top: 3px;
   margin-left: 10px;
 }
 .site-branding .logo {
@@ -323,6 +329,9 @@ ul li {
   position: relative;
   text-align: center;
   background: url(../images/backgrounds/header.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  background-size: cover;
   display: table;
 }
 .site-header::before {
