@@ -26,6 +26,9 @@ a {
 a:focus {
   outline: none;
 }
+a:hover {
+  color:inherit;
+}
 
 h1,
 h2,
@@ -151,6 +154,34 @@ ul li {
   margin: auto;
 }
 
+.grayscale{ 
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
+  /**/
+  -webkit-transform: translateZ(0);
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+}
+
+.full-table{
+  display: table;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.centred-cell{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
 /* 
  * 3.0 Helper Class
  */
@@ -215,6 +246,9 @@ ul li {
 /* 
  * 3.5 Helper Class: background
  */
+.bg-grey {
+  background-color: #f8f8f8;
+}
 .bg-image, .bg-image-1, .bg-image-2 {
   position: relative;
 }
@@ -256,6 +290,42 @@ ul li {
     text-transform: uppercase;
     text-align: left;
   }
+}
+/* 
+ * 3.6 Helper Class: panel
+ */
+.panel-heading {
+  cursor: pointer;
+}
+.panel-toggle.collapsed::before {
+  font-family: "Ionicons";
+  content: "\f218";
+  -webkit-transition: 0.5s linear ease-out;
+          transition: 0.5s linear ease-out;
+  position: absolute;
+  left: 15px;
+}
+.panel-toggle::before {
+  position: absolute;
+  left: 15px;
+  font-family: "Ionicons";
+  content: "\f209";
+}
+.panel-group .panel + .panel {
+  margin-top: 15px;
+}
+.panel-default > .panel-heading {
+  color: #FFF;
+  background-color: #000000;
+  border-color: #000;
+  border-radius: 0;
+  padding: 0;
+}
+.panel-default > .panel-heading a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  padding: 15px 15px 15px 35px;
 }
 /* 
  * 4.0 Navigation
@@ -393,6 +463,9 @@ ul li {
 .about figure {
   margin-bottom: 25px;
 }
+.about a{
+  font-weight: bold;
+}
 
 /* 
  * 6.2 Section: Facts
@@ -405,6 +478,8 @@ ul li {
   color: #fff;
   text-align: center;
   font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 /* 
@@ -460,12 +535,10 @@ ul li {
 }
 
 /* 
- * 6.7 Section: Schedule
+ * 6.7 Section: partners
  */
-.partner {
-  background-color: #f8f8f8;
-}
-.partner .partner-box {
+.partner-box {
+  position: relative;
   display: block;
   opacity: 0.3;
   height: 150px;
@@ -474,19 +547,25 @@ ul li {
   -webkit-transition: 0.5s all linear;
           transition: 0.5s all linear;
 }
-.partner .partner-box:hover {
+.partner-box:hover {
   opacity: 1;
+  /**/
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
 }
-.partner .partner-box-1 {
+.partner-box-1 {
   background: url(../images/partner/partner-1.png) no-repeat center center/contain;
 }
-.partner .partner-box-2 {
+.partner-box-2 {
   background: url(../images/partner/partner-2.png) no-repeat center center/contain;
 }
-.partner .partner-box-3 {
+.partner-box-3 {
   background: url(../images/partner/partner-3.png) no-repeat center center/contain;
 }
-.partner .partner-box-4 {
+.partner-box-4 {
   background: url(../images/partner/partner-4.png) no-repeat center center/contain;
 }
 .partner .partner-box-5 {
@@ -500,43 +579,6 @@ ul li {
 }
 .partner .partner-box-8 {
   background: url(../images/partner/partner-8.png) no-repeat center center/contain;
-}
-
-/* 
- * 6.8 Section: FAQ
- */
-.faq .panel-heading {
-  cursor: pointer;
-}
-.faq .faq-toggle.collapsed::before {
-  font-family: "Ionicons";
-  content: "\f218";
-  -webkit-transition: 0.5s linear ease-out;
-          transition: 0.5s linear ease-out;
-  position: absolute;
-  left: 15px;
-}
-.faq .faq-toggle::before {
-  position: absolute;
-  left: 15px;
-  font-family: "Ionicons";
-  content: "\f209";
-}
-.faq .panel-group .panel + .panel {
-  margin-top: 15px;
-}
-.faq .panel-default > .panel-heading {
-  color: #FFF;
-  background-color: #000000;
-  border-color: #000;
-  border-radius: 0;
-  padding: 0;
-}
-.faq .panel-default > .panel-heading a {
-  position: relative;
-  display: block;
-  text-decoration: none;
-  padding: 15px 15px 15px 35px;
 }
 
 /* 
