@@ -518,11 +518,12 @@ ul li {
  */
 .schedule-box {
   position: relative;
-  background-color: #000;
+  background-color: #231f20;
   color: #fff;
   text-align: center;
   padding: 50px 0;
   margin: 25px 0 0;
+  height: 240px;
 }
 .schedule-box::before {
   content: '';
@@ -533,7 +534,12 @@ ul li {
   left: 5px;
   border: 1px solid #fff;
 }
-
+.box-pink {
+  background-color: #ce1f4a;
+}
+.box-green {
+  background-color: #83c65f;
+}
 /* 
  * 6.7 Section: partners
  */
@@ -621,9 +627,9 @@ ul li {
   }
 }
 @media (min-width: 992px) {
-  .schedule-box {
+  /*.schedule-box {
     margin: 0;
-  }
+  }*/
 
   .grid-item-md-6 {
     width: 50%;
