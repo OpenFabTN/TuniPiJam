@@ -505,6 +505,24 @@ ul li {
 /* 
  * 6.4 Section: Registration & Pricing
  */
+.registration iframe{
+  height: 1510px;
+}
+@media (min-width: 375px) {
+  .registration iframe{
+    height: 1410px;
+  }
+}
+@media (min-width: 750px) {
+  .registration iframe{
+    height: 1140px;
+  }
+}
+@media (min-width: 992px) {
+  .registration iframe{
+    height: 1140px;
+  }
+}
 /* 
  * 6.5 Section: Contribution
  */
