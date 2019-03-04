@@ -1,6 +1,6 @@
-# TuniPiJam
-Tunisia Raspberry Jam website<br>
-http://tunipijam.oshw.tn/<br>
+# TuniPiJam 2017
+Tunisia Raspberry Jam 2017 website<br>
+http://tunipijam.oshw.tn/2017<br>
 <br>
 Source code adapted from :<br>
 Conference Lite - Free HTML5 Website Template for Event Meetup Seminar Workshop<br>
